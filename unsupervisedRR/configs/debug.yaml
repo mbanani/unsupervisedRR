@@ -1,0 +1,9 @@
+# Just a simple config file for testing
+MODEL:
+    name: "PCReg"
+TRAIN:
+    num_epochs: 1
+DATASET:
+    name: "ScanNet"
+EXPERIMENT:
+    name: "Debug Config"
