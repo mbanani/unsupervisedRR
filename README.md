@@ -5,7 +5,7 @@ This repository holds all the code and data for our recent work on unsupervised 
 registration:
 
 **[UnsupervisedR&R: Unsupervised Pointcloud Registration via Differentiable Rendering][1]**  
-[Mohamed El Banani](https://mbanani.github.io), Luya Gao, [Justin Johnson](https://web.eecs.umich.edu/~justincj/)
+[Mohamed El Banani](https://mbanani.github.io), [Luya Gao](https://scholar.google.com/citations?user=OHk0dbgAAAAJ), [Justin Johnson](https://web.eecs.umich.edu/~justincj/)
 
 If you find this code useful, please consider citing:  
 ```text
