@@ -26,6 +26,7 @@ class PCReg(nn.Module):
         super(PCReg, self).__init__()
         # set encoder decoder
         chan_in = 3
+        self.cfg = cfg
         feat_dim = cfg.feat_dim
 
         # No imagenet pretraining
@@ -213,3 +214,26 @@ class PCReg(nn.Module):
             pcs_X = torch.cat(pcs_X, dim=1).detach().cpu()
 
         return pcs_X
+
+    def get_feature_pcs(self, rgbs, K, deps):
+        # Estimate Depth -- now for 1 and 2
+        n_views = len(rgbs)
+
+        # Encode features
+        feats = [self.encode(rgbs[i]) for i in range(n_views)]
+
+        # generate pointclouds - generate grid once for efficience
+        B, _, H, W = feats[0].shape
+        assert (
+            feats[0].shape[-1] == deps[0].shape[-1]
+        ), f"Same size {feats[0].shape} - {deps[0].shape}"
+        grid = get_grid(B, H, W)
+        grid = grid.to(deps[0])
+
+        K_inv = K.inverse()
+        pointclouds = [
+            grid_to_pointcloud(K_inv, deps[i], feats[i], grid) for i in range(n_views)
+        ]
+        pcs_X = [pc[0] for pc in pointclouds]
+        pcs_F = [pc[1] for pc in pointclouds]
+        return pcs_X, pcs_F, None

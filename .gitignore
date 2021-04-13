@@ -1,6 +1,6 @@
 # vim
 *.swp
-*.pkl
+*.pth
 
 # ignore slurm scripts
 scripts
