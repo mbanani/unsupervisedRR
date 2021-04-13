@@ -37,8 +37,7 @@ discussions and feedback on early drafts of this work.
 We would also like to acknowledge the following repositories and users for making great code openly
 available for us to use:
 
-- [@pytorch/pytorch](https://www.github.com/pytorch/pytorch) because I can't imagine doing this
-  in CAFFE.
+- [@pytorch/pytorch](https://www.github.com/pytorch/pytorch)
 - [@facebookresearch/pytorch3d](https://github.com/facebookresearch/pytorch3d) for a great 3D vision
   library. 
 - [@intel-isl/Open3D](https://github.com/intel-isl/Open3D) for easy to use implementations of
@@ -49,7 +48,7 @@ for easy geometric registration.
 
 
 [1]: https://mbanani.github.io/unsupervisedRR/
-[2]: https://github.com/mbanani/unsupervisedRR/tree/master/docs/setup.md 
-[3]: https://github.com/mbanani/unsupervisedRR/tree/master/docs/datasets.md 
-[4]: https://github.com/mbanani/unsupervisedRR/tree/master/docs/training.md
-[5]: https://github.com/mbanani/unsupervisedRR/tree/master/docs/inference.md 
+[2]: https://github.com/mbanani/unsupervisedRR/tree/main/docs/environment.md 
+[3]: https://github.com/mbanani/unsupervisedRR/tree/main/docs/datasets.md 
+[4]: https://github.com/mbanani/unsupervisedRR/tree/main/docs/training.md
+[5]: https://github.com/mbanani/unsupervisedRR/tree/main/docs/evaluation.md 

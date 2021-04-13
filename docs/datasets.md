@@ -6,6 +6,9 @@ dictionary for the data loaders. The data dictionary allows us to easily interfa
 by defining paths in a consistent way as well as pre-extracting the intrinsic and pose matrices. 
 We emphasize that the pose matrices are only used for evaluation. 
 
+Once you download the datasets, make sure to update the paths in
+`unsuperviserRR/datasets/builder.py` with the dataset root directories. 
+
 ## ScanNet
 
 ScanNet is a large dataset of indoor scenes: over 1500 scenes and 2.5 million views. 

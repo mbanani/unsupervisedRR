@@ -2,6 +2,13 @@
 *.swp
 *.pkl
 
+# ignore slurm scripts
+scripts
+
+# Ignore superpoint file; based on the demo code in https://github.com/magicleap/SuperPointPretrainedNetwork
+# This has to be ignored since their license forbids redistribution
+unsupervisedRR/models/superpoint.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
