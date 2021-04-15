@@ -19,11 +19,11 @@ conda install matplotlib tensorboard --yes
 # update numpy 
 conda install numpy==1.19.4 --yes
 
-# PyTorch 0.4.0
-pip install "git+https://github.com/facebookresearch/pytorch3d.git@v0.4.0"
+# PyTorch3D 0.4.0
+python -m pip install "git+https://github.com/facebookresearch/pytorch3d.git@v0.4.0"
 
 # Open3D 0.9 (Older version due to OS restrictions with RedHat)
-pip install open3d==0.9
+python -m pip install open3d==0.9
 
 # MinkowskiEngine 0.5
 conda install openblas-devel -c anaconda --yes
@@ -33,7 +33,7 @@ python setup.py install --blas=openblas --blas_include_dirs=${CONDA_PREFIX}/incl
 cd ..
 
 # other misc packages for baselines
-pip install nibabel opencv-python easydict pre-commit  
+python -m pip install nibabel opencv-python easydict pre-commit  
 
 # The following is not essential to run the code, but good if you want to contribute
 # or just keep clean repositories. You should find a .pre-commit-config.yaml file 
