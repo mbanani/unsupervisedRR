@@ -48,7 +48,7 @@ available for us to use:
 for easy geometric registration. 
 
 
-[1]: https://mbanani.github.io/unsupervisedRR/
+[1]: https://mbanani.github.io/unsupervisedrr/
 [2]: https://github.com/mbanani/unsupervisedRR/tree/main/docs/environment.md 
 [3]: https://github.com/mbanani/unsupervisedRR/tree/main/docs/datasets.md 
 [4]: https://github.com/mbanani/unsupervisedRR/tree/main/docs/training.md
